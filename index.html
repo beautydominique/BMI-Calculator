@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <link rel="styleSheet" href="./css/home.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <a href="#" class="a-navbar">HOME</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="./htmlnya/BMI-Intro.html" class="a-navbar">BMI Intoduction</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="./htmlnya/BMI-Table-for-Adults.html" class="a-navbar">BMI Table for Adults</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="./htmlnya/BMI-Chart-for-Adults.html" class="a-navbar">BMI Chart for Adults</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="./htmlnya/BMI-Table-for-children.html" class="a-navbar">BMI Table for Children</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="./htmlnya/Risks.html" class="a-navbar">Risks</a>
+                </li>
+                <li class="li-navbar">
+                    <a href="./htmlnya/Limition-of-BMI.html" class="a-navbar">Limitation of BMI</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="form" class="container-content">
+            <div style="margin-right: 50px;" class="table-contain">
+                <Table border="1">
+                    <thead>
+                        <tr class="table-font">
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Weight</th>
+                            <th>Height</th>
+                            <th>Weight Index</th>
+                            <th>Category</th>
+                            <!-- <th>Action</th> -->
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+                        <!-- <tr>
+                            <td>Zul</td>
+                            <td>50</td>
+                            <td>Boys</td>
+                            <td>65</td>
+                            <td>165</td>
+                        </tr> -->
+                    </tbody>
+                </Table>
+            </div>
+            <form class="form-content">
+                <div class="blurred-box">
+                    <div class="bungkus">
+                        <h2>BMI CALCULATE</h2>
+                        <br>
+                        <h3>FORM DATA</h3>
+                        <br>
+                        <div>
+                            
+                        </div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        <br><br>
+                        <label for="age">Age</label>
+                        <input type="number" id="age"> years
+                        <br><br>
+                        <label for="">Gender</label>
+                        <input type="radio" name="jenkel" id="f"><label for="f">F</label>
+                        <input type="radio" name="jenkel" id="m"><label for="m">M</label>
+                        <br><br>
+                        <label for="weight">Weight</label>
+                        <input type="number" id="weight"> kg
+                        <br><br>
+                        <label for="height">Height</label>
+                        <input type="number" id="height"> cm
+                        <br><br>
+                        <div class="box">
+                            <a class="button" id="calculate" href="#popup1" type="calculate">Calculate</a>
+                        </div>
+                        <br>
+                        <div class="box">
+                            <a class="button" id="reset" type="reset">Reset</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Result</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        <!-- <p>Your BMI calculate: </p>
+                            <p class="number" id="weight-index">1</p>
+                            <p> and your category: </p>
+                            <p class="string" id="category">Underweight</p> -->
+                        <!-- <p>Your BMI calculate: <span id="weight-index"></span> and your category: <span id="category"></span></p> -->
+                        <p id="hasil-akhir"></p>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+        <div class="container-footer">
+            <br><br><br><br>
+            <H2 class="footer-h"> </H2>
+        </div>
+    </div>
+    <script type="text/javascript" src="./fungsi-kategori-BMI.js"> </script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+}
+
+.container-navbar {
+    width: 100%;
+    height: 10vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, serif;
+    background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  
+}
+@supports(-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%));
+
+.ul-navbar {
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 10px;
+    margin: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.li-navbar:hover {
+    background-color:#a3bec5; 
+    /* ganti button bar home */
+    border-radius: 8px;
+    
+}
+
+.a-navbar {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.container-content {
+  /* background-color: cadetblue; */
+  
+  background: linear-gradient(-45deg, #134E5E, #78b687 ); 
+  background-size: 200% 200%; 
+  animation: gradient 20s ease infinite;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.table-contain {
+  margin-bottom: 320px;
+  position: relative;
+  margin-right: 100px;
+  
+}
+
+.table-font {
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.blurred-box{
+  padding: 20px;
+  position: relative;
+  width: 250px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: rgba(255, 255, 255, 0.31);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.1px);
+  -webkit-backdrop-filter: blur(4.1px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* .blurred-box:after{
+  content: '';
+  width: 600px;
+  height: 300px;
+  background: inherit; 
+  position: absolute;
+  left: -20px;
+  left position
+  right: 0;
+  top: -20px;  
+  top position;
+  bottom: 0;
+  box-shadow: inset 0 0 0 1000px rgba(255,255,255,0.05);
+  filter: blur(25px);
+ } */
+.bungkus {
+  z-index: 10;
+}
+
+.umur{
+ 
+}
+
+.box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 10px/40px;
+    background-clip: padding-box;
+    text-align: center;
+  }
+
+.button {
+    font-size: 1em;
+    padding: 5px;
+    color: #fff;
+    border: 0 solid #ccd3cf;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.button:hover {
+    background: hwb(245 61% 22%);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+    /* buat mengatur setelah pop up keluar */
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 5s ease-in-out;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+
+@media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+  
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+}
+
+.container-footer {
+    height: 10vh;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.3px);
+    -webkit-backdrop-filter: blur(3.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-h {
+    font-size: 20px;
+    color: white;
+}
